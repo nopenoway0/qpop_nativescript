@@ -1,0 +1,4 @@
+To run compile and run:
+Install nativescript
+navigate to main directory
+run: tns run android
