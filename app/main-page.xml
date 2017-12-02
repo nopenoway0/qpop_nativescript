@@ -10,7 +10,7 @@ https://docs.nativescript.org/ui/components.
     http://docs.nativescript.org/ui/action-bar
     -->
     <Page.actionBar>
-        <ActionBar title="Qpop" icon="" class="action-bar">
+        <ActionBar title="QPOP" icon="" class="action-bar">
         </ActionBar>
     </Page.actionBar>
     <!--
@@ -25,16 +25,16 @@ https://docs.nativescript.org/ui/components.
     class names available for styling your app at https://docs.nativescript.org/ui/theme.
     -->
     <StackLayout class="p-20">
-        <Button id="connect_button" text="CONNECT" tap="submit" class="btn btn-primary btn-active"/>
-        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
         <StackLayout orientation="horizontal">
-            <Label text="IPad: " class = "h2" id="ipad_label"/>
+            <Label text="IP address  : " class = "h2" id="ipad_label"/>
             <TextView id="ipadd" class="input input-border"/>
         </StackLayout>
         <StackLayout orientation="horizontal">
-            <Label text= "Code: " class = "h2" id="code_label"/>
+            <Label text= "4-digit code: " class = "h2" id="code_label"/>
             <TextView id="auth_num" class = "input input-border"/>
         </StackLayout>
+        <Button id="connect_button" text="CONNECT" tap="submit" class="btn btn-primary btn-active"/>
+        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
         <StackLayout id="spinner" visibility="collapsed">
             <Gif:Gif src="~/loading.gif" text = "Hide"/>
         </StackLayout>
